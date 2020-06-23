@@ -1,0 +1,14 @@
+import * as React from "react";
+import Modal from "./modal";
+
+export default function (props) {
+	return (
+		<Modal id="about-derry" title="Derry Dean Smith" {...props}>
+			<p>On June 6, 1952 Walter, Sr. and Mary Virginia Smith of Santa Monica, California presented to this world a very special little baby boy they named Derry Dean. He was the last of three children to this union.</p>
+			<p>Derry attended all Santa Monica schools, which included Edison Elementary, John Adams Jr. High, Santa Monica High (Samohi), and Santa Monica College. Santa Monica had a unique resident and student/athlete for many years.</p>
+			<p>During his journey as an outstanding athlete, he was a successful pitcher and homerun hitter in little league and an inspiring quarterback in POP Warner football. By the time he reached Samohi he was primed for success by some of the best coaches in the area. They included baseball Coaches James McPherson and Jerry Weinstein; basketball Coach Johnny Lawndale and football Coaches Dick Turner and Jim Steer. Derry also had the privilege of traveling to All-star Baseball tournaments, to New Jersey to play in a National Basketball Championship tournament representing the Santa Monica Boy’s Club and he played baseball in the Pan American Games in Italy.</p>
+			<p>After college, Derry was united in marriage and to this union two sons were born, Derry Roshad and Dylen. He was so proud of their accomplishments in the Santa Monica area. Derry worked for United Parcel Service (UPS), for many years before he became ill. Although Derry had a long-term illness, he prevailed until one of his most wanted milestones were accomplished, the birth of his two grandsons, Draiden and Donnan.</p>
+			<p>Proceeding Derry in his passing were his parents, Walter and Mary Virginia and his older brother Walter, Jr. Cherishing his loving memory are his sons, Derry Roshad and Dylen of Santa Monica. Grandsons: Draiden and Donnan of Westchester; Sisters: Rosa Jones (Robert), Las Vegas; Vanessa Hawkins (Herman) and Delores Selico, Los Angeles. Nephew: Sean Taylor (Carolyn) Vallejo. Nieces: Rysha Jones-Graham (Lennard) Los Angeles; Michaelyn Jones and Kristal Cummings (Lemuel) Las Vegas. Grandniece: Xiera Taylor, Grandnephews: Shance and Aiden Taylor, Vallejo and Blake Graham, Los Angeles. Cousins: Henry Washington, Los Angeles and Johnny Mae Dalton, Santa Monica. Derry had a very special second mother in his life, Erma Smith, who the family calls Grandma. Until his death, Grandma was a spiritual voice in his adult life. Other surrogate mothers include Rosa Mae Brown, his Great-aunt (deceased) and Elizabeth Smith (our Nana) his mother’s best friend. Also left to cherish his memory are a host of friends and relatives.</p>
+		</Modal>
+	);
+};
