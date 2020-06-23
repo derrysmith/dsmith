@@ -1,5 +1,11 @@
 # paths
-/node_modules
+.cache
+/.DS_Store
+node_modules
+public
+
+# files
+yarn-error.log
 index copy.js
 landing copy.js
 FUNDING.yml
