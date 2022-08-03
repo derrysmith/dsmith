@@ -17,6 +17,9 @@ jobs:
     env:
       IMAGE_NAME: us-docker.pkg.dev/${{secrets.GCP_PROJECT_ID}}/dsmith/web
     steps:
+      - name: checkout dsmith repository
+        uses: actions/checkout@v3
+
       - name: authenticate google cloud
         uses: google-github-actions/auth@v0
         with:
@@ -33,9 +36,6 @@ jobs:
       - name: configure docker
         run: gcloud auth configure-docker us-docker.pkg.dev --quiet
       
-      - name: checkout dsmith repository
-        uses: actions/checkout@v3
-
       - name: build docker image
         run: docker build -f ./dsmith-web/dsmith-web.dockerfile -t $IMAGE_NAME ./dsmith-web
 
