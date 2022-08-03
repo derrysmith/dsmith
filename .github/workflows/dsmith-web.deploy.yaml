@@ -9,15 +9,13 @@ on:
       - 'dsmith-web/**'
       - '!dsmith-web/**/*.md'
 
-env:
-  SRC: './dsmith-web'
-
 jobs:
   build_and_deploy:
     name: Build/Test/Deploy dsmith-web to Google Cloud Run
     runs-on: ubuntu-latest
     environment: production
     env:
+      SRC: './dsmith-web'
       IMAGE_NAME: us-docker.pkg.dev/${{secrets.GCP_PROJECT_ID}}/dsmith/web
     steps:
       - name: authenticate google cloud
