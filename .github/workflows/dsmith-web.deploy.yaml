@@ -15,7 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     env:
-      SRC: './dsmith-web'
       IMAGE_NAME: us-docker.pkg.dev/${{secrets.GCP_PROJECT_ID}}/dsmith/web
     steps:
       - name: authenticate google cloud
@@ -38,7 +37,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: build docker image
-        run: docker build -f '$SRC/dsmith-web.dockerfile' -t $IMAGE_NAME $SRC
+        run: docker build -f ./dsmith-web/dsmith-web.dockerfile -t $IMAGE_NAME ./dsmith-web
 
       - name: push docker image to Google Container Registry
         run: docker push $IMAGE_NAME
