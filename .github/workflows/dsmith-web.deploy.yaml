@@ -49,8 +49,3 @@ jobs:
           --region us-west1 \
           --platform managed \
           --allow-unauthenticated
-          gcloud run deploy web \
-          --image $IMAGE_NAME \
-          --region us-central1 \
-          --platform managed \
-          --allow-unauthenticated
