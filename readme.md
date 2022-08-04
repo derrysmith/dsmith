@@ -8,6 +8,7 @@ Donations can be made to the [Santa Monica Education Foundation][2]. In the form
 
 ## License
 
+
 https://derrysmith.org is an open source project under the MIT license.
 
 [1]: https://derrysmith.org
